@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="long_memory_improver">
+
+    <!-- normalize -->
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--  google fonts  -->
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!--    fontAwesom-->
+    <script src="https://kit.fontawesome.com/f2a29a7baf.js" crossorigin="anonymous"></script>
+    <!-- mano css -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Your_brain</title>
+</head>
+
+<body>
+
+    <header class="container-fluid bg_color py-3 px-5 feather_btn">
+        <div class="row">
+            <div class="col-lg-5 col-md-12 col-sm-12">
+                <h2 class="letter_spacing text-center color_light">Your long-term memory</h2>
+            </div>
+            <div class="col-lg-2 offset-lg-1 col-md-4 col-sm-4 dark_color dropdown">
+                <span class="icon"><i class="fas fa-brain"></i></span>
+                <div class="dropdown_content rounded p-3">
+                    <p>You have to learn a lot of important information. Every day you have more and more of it. And you forgot something that you learned before. </p>
+                    <p>In general, the perfect memory is posible. You can create your learning system by managing your learning time. And it can be easy.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-sm-4 dark_color dropdown">
+                <span class="icon"><i class="fas fa-book-reader"></i></span>
+                <div class="col dropdown_content rounded p-3">
+                    <p>Your learning items list.</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-4 dark_color dropdown">
+                <span class="icon icon_shadow"> <i class="far fa-lightbulb"></i></span>
+                <div class="dropdown_content rounded p-3">
+                    <p>These books inspired me to create all of this:</p>
+                    <ul class="bulb_ul">
+                        <li class="bulb_list py-1">Use Your Memory. Tony Buzan. BBC Worldwide Ltd., 2003</li>
+                        <li class="bulb_list py-1">The brain that changes itself: stories of personal triumph from the fronties of brain science, Norman Doidge, 2007</li>
+                        <li class="bulb_list py-1">The Future of the Mind: The Scientific Quest to Understand, Enhance, and Empower the Mind by Michio Kaku, 2014</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--     main box      -->
+    <!--            <button type="click" id="hide" class="btn btn-info mb-2">Hide</button>            -->
+    <div id="learn_box" class="container-fluid rounded bg">
+        <div class="row">
+
+
+            <div class="col col-9 drag_drop_box rounded box_shadow">
+                <div id="learn_boxes" class="rounded mx-5 my-2 p-2 box_shadow">
+
+                    <form class="needs-validation px-2 py-2" novalidate>
+                        <!---------------   hide in icon btn ----------------->
+                        <div type="button" type="click" id="hide" class="icon dark_color btn btn_shadow form-control-sm rounded-circle feather">
+                            <i class="fas fa-feather-alt"></i>
+                        </div>
+
+                        <!-- user's file name   -->
+                        <div id="hidden_form" class="form-row py-1 hide_form">
+
+                            <div class="col-lg-3 col-md-3 col-sm-11 m-1 ml-lg-5">
+                                <input class="form-control" id="validationCustom01" type="text" placeholder="Write title of your lesson" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+
+                            <!--  file source    -->
+                            <div class="dark_color dropdown">
+                                <span class="icon"> <i class="fas fa-hand-point-right"></i></span>
+                                <div class="dropdown_content rounded py-2 px-2">
+                                    <p>Choose one source</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-3 col-sm-11 m-1 dark_color">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input dark_color" id="validatedCustomFile" required>
+                                    <label class="custom-file-label dark_color" for="validatedCustomFile">Choose file...</label>
+                                    <div class="invalid-feedback dark_color">Example invalid custom file feedback</div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-3 col-sm-11 m-1">
+                                <input class="form-control" id="validationCustom01" type="text" placeholder="Input link / source of lesson" required>
+                                <div class="invalid-feedback">
+                                    Please choose link of your lesson!
+                                </div>
+                            </div>
+                            <div class="col-lg-11 ml-lg-4 col-md-11 col-sm-11  m-1">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your notes" rows="3"></textarea>
+                            </div>
+
+                            <div class="col-lg-11 col-md-5 ml-md-5 col-sm-11 offset-sm-5 p-2 m-2 ml-5">
+                                <button class="btn dark_color btn_shadow form-control-sm" type="submit">Submit to <span class="ml-1"><i class="fas fa-book-reader"></i></span></button>
+                            </div>
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+                <button type="button" class="btn dark_color btn_shadow">Begin Learning</button>
+                <button type="button" class="btn dark_color btn_shadow float-right">Finish Learning</button>
+
+                <!--  main learn box    -->
+                <div class="main_learn_box rounded mx-5 my-2 box_shadow">
+                    <div class="dark_color px-3 py-3">
+
+                        <p> <span class="icon m-2"><i class="fas fa-puzzle-piece"></i></span> In case to begin new lesson, create item in <san> <i class="fas fa-feather-alt"></i></san>, then click on item name in <span class="m-1"><i class="fas fa-book-reader"></i></span> list.</p>
+                    </div>
+                    <div class="">
+
+                    </div>
+
+                </div>
+
+            
+
+            </div>
+
+            <!-- time line -->
+            <div id="time_line" class="col col-3 time_line rounded">
+                <div class="col-9 dark_color dropdown my-2">
+                    <span class="icon dark_color"><i class="far fa-calendar-check"></i></span>
+                    <div class="col dropdown_content rounded p-3">
+                        <p>Timeline. The sequence in time when you should <b>glance over</b> the information which you learned.</p>
+                        <ol>
+                            <li>After 10 min</li>
+                            <li>After 24 hours</li>
+                            <li>After 1 week</li>
+                            <li>After 1 month</li>
+                            <li>After 6 months</li>
+                        </ol>
+                    </div>
+                </div>
+
+
+<!--  vertical time line  -->
+            <div class="vertical_time_line">
+                <div class="beautiful_dot_line"></div>
+                
+            </div>
+<!--    one time element    -->
+                <div class="mx-3">
+                    <div class="time_element dark_color">
+                        <p class="ml-5">Item name</p>
+                        <p class="ml-5 date_upper">Item date</p>
+                        <div class="element_line"></div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <footer class="container-fluid footer py-2 fixed-bottom">
+        <div class="row">
+            <div class="col-lg-5 offset-lg-1 col-md-5 col-sm-10 footer_color px-1 text-right">
+                <p><img src="IMG/vtmc-logo-zalias-3-300x263.png" class="logo_size px-2">Vilniaus technologijų mokymų centras</p>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-5 footer_color px-1 text-right">
+                <p>Web developer</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-5 footer_color px-1 text-right">
+                <p>Giedrė Klimaitė, ŽP19-3, 2019-2020 m.m.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="JS/main.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>

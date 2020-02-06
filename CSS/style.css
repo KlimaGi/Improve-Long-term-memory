@@ -1,0 +1,161 @@
+* {
+    font-family: 'Alegreya Sans SC', Tahoma, Verdana, Segoe, sans-serif;
+}
+
+.dark_color {
+    /*    color: #264d73;*/
+    color: #336699;
+}
+
+/*** begin title ***/
+.bg {
+    background-color: #c6d9ec;
+}
+
+.color_light {
+    color: #c6d9ec;
+    text-shadow: 0 0 5px #336699;
+}
+
+.bg_color {
+    background-image: linear-gradient(#336699, #c6d9ec);
+}
+
+.letter_spacing {
+    letter-spacing: 2px;
+}
+
+/*
+.top_look {
+    position: absolute;
+    z-index: -1;
+}
+*/
+
+/*** dropdown line ***/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 0 5px #9fbfdf;
+    background-color: #c6d9ec;
+    width: 15rem;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+.icon_shadow {
+    text-shadow: 0 -2px 5px #ecf2f9, 0 -3px 10px #ecf2f9;
+}
+
+.bulb_ul {
+    list-style-position: outside;
+    list-style-type: none;
+}
+
+li.bulb_list:before {
+    font-family: FontAwesome;
+    content: "\f0eb";
+    padding-right: 1rem;
+    margin-left: -1.7rem;
+}
+
+/*** main box ***/
+.box_shadow {
+    box-shadow: 0 0 5px #9fbfdf;
+}
+
+.drag_drop_box {
+    background-color: #ecf2f9;
+    height: 100%;
+}
+
+/* feather btn on line */
+.feather_btn {
+    position: relative;
+}
+
+.feather {
+    position: absolute;
+    top: -20px;
+    left: 42px;
+    z-index: 1;
+}
+
+.hide {
+    display: none;
+}
+
+/* there open learning content */
+.main_learn_box {
+    height: 32rem;
+}
+
+.btn_shadow {
+    box-shadow: 0 0 6px #336699;
+    background-color: #c6d9ec;
+}
+
+/*** vertical time line ***/
+.vertical_time_line{
+    position: relative;
+}
+.beautiful_dot_line{
+    width: 3px;
+    height: 50rem;
+    border-right: 3px dotted #336699;
+    position: absolute;
+    top: -2.9rem;
+    left: 0.5rem;
+}
+
+/*** time-line ***/
+.time_line {
+    background-image: linear-gradient(#c6d9ec, #336699);
+    box-shadow: -2px 0 7px #4080bf;
+}
+
+.element_line {
+    width: 17rem;
+    height: 1.5rem;
+    transform: skew(-60deg);
+    border-top: 1px solid #336699;
+    border-left: 1.5px solid #336699;
+    position: absolute;
+    top: 24px;
+    left: 15px;
+}
+
+.time_element {
+    position: relative;
+}
+.date_upper{
+    margin-top: -1rem;
+}
+/***   footer  ***/
+.footer {
+    background-color: #336699;
+    box-shadow: 2px 0 7px #336699;
+}
+
+.footer_color {
+    color: #79a6d2;
+    letter-spacing: 1px;
+    font-size: 12px;
+
+}
+
+.logo_size {
+    height: 20px;
+}
